@@ -8,6 +8,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        MoviesDTO movies = new MoviesDTO("resources/movies.xml");
+
+        System.out.println(movies.totalRecords());
+        movies.printAllMovieNames();
+        movies.printAllMovieNames();
     }
 }
